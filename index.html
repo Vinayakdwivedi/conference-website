@@ -6,8 +6,14 @@
   <title>Tech Conference 2023</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
+  <div id="popup" >
+    <p>Will be updated soon</p>
+    <a href="#" onclick="toggle()">close</a>
+   </div>
+<div class="blur">  
   <!-- Top Header -->
   <div class="top-header">
     <div class="container-head">
@@ -21,8 +27,8 @@
     <div class="container">
       <ul>
         <li><a href="#home anote" class="home">Home</a></li>
-        <li><a href="#speakers anote" class="invited">Invited Speakers</a></li>
-        <li><a href="#theme anote" class="Theme">Conference Theme</a></li>
+        <li><a href="#speakers anote" class="invited blur" onclick= "toggle()">Invited Speakers</a></li>
+        <li><a href="./conference-theme.html" class="Theme">Conference Theme</a></li>
         <li><a href="#fee anote" class="fee">Registration Fee</a></li>
         <li><a href="#brochure anote" class="brochure">Download Brochure</a></li>
         <li><a href="#call-for-paper anote" class="paper">Call for paper</a></li>
@@ -31,15 +37,18 @@
   </nav>
 
   <!-- Hero Section -->
+   
   <section id="hero">
     <div class="container">
+     
       <div class="hero-content">
+       
         <h2>About the Conference</h2>
         <p>Join us for the largest gathering to broaden the participants 
             understanding of a smart library management in the 
-            context of AI –based emerging technologies and how to 
+            context of AI -based emerging technologies and how to 
             leverage AI-based services in developing smart libraries.</p>
-        <p class="date">October 15-17, 2023 | San Francisco, CA</p>
+        <p class="date">april 15-17, 2025 | Gautam Budha University, Greater Noida</p>
         <a href="#register" class="btn">Register Now</a>
       </div>
     </div>
@@ -52,25 +61,25 @@
       <div class="day animated">
         <h3>Day 1: October 15</h3>
         <ul>
-          <li>9:00 AM - Registration</li>
+          <!-- <li>9:00 AM - Registration</li>
           <li>10:00 AM - Keynote Speech</li>
           <li>12:00 PM - Lunch Break</li>
-          <li>2:00 PM - Workshop Sessions</li>
+          <li>2:00 PM - Workshop Sessions</li> -->
         </ul>
       </div>
       <div class="day animated">
         <h3>Day 2: October 16</h3>
         <ul>
-          <li>9:00 AM - Panel Discussions</li>
+          <!-- <li>9:00 AM - Panel Discussions</li>
           <li>12:00 PM - Networking Lunch</li>
-          <li>2:00 PM - Tech Exhibitions</li>
+          <li>2:00 PM - Tech Exhibitions</li> -->
         </ul>
       </div>
       <div class="day animated">
         <h3>Day 3: October 17</h3>
         <ul>
-          <li>9:00 AM - Hackathon</li>
-          <li>12:00 PM - Closing Ceremony</li>
+          <!-- <li>9:00 AM - Hackathon</li>
+          <li>12:00 PM - Closing Ceremony</li> -->
         </ul>
       </div>
     </div>
@@ -102,5 +111,15 @@
       <p class="copyright">&copy; 2025 library Conference. All rights reserved.</p>
     </div>
   </footer>
+  </div>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+  <script type="text/javascript">
+    function toggle(){
+      var blur = document.querySelector('.blur');
+      blur.classList.toggle('active');
+      var popup = document.querySelector('#popup');
+      popup.classList.toggle('active');
+    }
+  </script>
 </body>
 </html>

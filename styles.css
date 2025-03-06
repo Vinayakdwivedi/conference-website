@@ -7,6 +7,11 @@ body {
     color: #333;
     background: #f4f4f4;
   }
+
+  @font-face {
+    font-family: welcome;
+    src: url(./Mileast.otf);
+  }
 /*   
   .container {
     width: 90%;
@@ -66,7 +71,10 @@ body {
     display: inline-block;
     margin: 0;
     font-size: 2em;
-  }
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif,;
+    
+   }
   
   /* Navigation Panel */
   nav {
@@ -96,7 +104,10 @@ body {
   
   /* Hero Section */
   #hero {
-    background-image: url('./glass_effect.webp');
+    background-image: url("./gbu-lib-1.jpg"); 
+    
+    letter-spacing: 2px;
+    /* overflow-x: auto; */
     background-size: cover;
     height: 80vh;
     display: flex;
@@ -106,29 +117,41 @@ body {
     color: #fff;
     position: relative;
   }
+
+  .ical-poster{
+    background-image: url("./conference-poster.jpg");
+    z-index: 1;
+    background-size: cover;
+  }
   
-  #hero::before {
+  #hero::after {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.7)
+    background: rgba(0, 0, 0, 0.5)
   }
   
   .hero-content {
     position: relative;
+  
     z-index: 1;
   }
   
+  .hero-content h1 {
+    font-size: 300%;
+    font-family: welcome;
+    
+  }
   .hero-content h2 {
-    font-size: 3em;
-    margin-bottom: 20px;
+    font-size: 250%;
+    font-family: welcome;
   }
   
   .hero-content p {
-    font-size: 1.2em;
+    font-size: 2em;
     margin-bottom: 20px;
   }
   
@@ -147,7 +170,52 @@ body {
   
   .hero-content .btn:hover {
     background: #2980b9;
+  } 
+
+  .about-content {
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px; 
   }
+  .about-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    display: block;
+    padding: 20px;
+    margin-left: 30px;
+    margin-top: 40px;
+  }
+  .about-content h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    
+  }
+  
+  .about-content p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .about-content .date {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .about-content .btn {
+    background: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+ 
+  }
+  
+  .about-content .btn:hover {
+    background: #2980b9;
+  } 
   
   /* Schedule Section */
   #schedule {

@@ -31,6 +31,7 @@ body {
     color: #ffffff;
   }
   
+  
   a {
     text-decoration: none;
     color: #3498db;
@@ -110,9 +111,12 @@ body {
     /* overflow-x: auto; */
     background-size: cover;
     height: 80vh;
+    width: 98.8vw;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    justify-self: center;
     text-align: center;
     color: #fff;
     position: relative;
@@ -136,18 +140,17 @@ body {
   
   .hero-content {
     position: relative;
-  
+    line-height: 350%;
     z-index: 1;
   }
   
   .hero-content h1 {
-    font-size: 300%;
-    font-family: welcome;
+    font-size: 3em;
     
   }
   .hero-content h2 {
-    font-size: 250%;
-    font-family: welcome;
+    font-size: 3em;
+
   }
   
   .hero-content p {
@@ -163,14 +166,10 @@ body {
   .hero-content .btn {
     background: #3498db;
     color: #fff;
-    padding: 10px 20px;
+    /* padding: 10px 20px; */
     border-radius: 5px;
-    font-size: 1.2em;
+    /* font-size: 1.2em; */
   }
-  
-  .hero-content .btn:hover {
-    background: #2980b9;
-  } 
 
   .about-content {
     position: relative;
